@@ -1,0 +1,20 @@
+body {
+    background-color: var(--body_background);
+    color : var(--body_color);
+}
+
+.dark-mode-text{
+    @apply text-white 
+}
+.light-mode-text{
+    @apply text-[#0A0A0A] 
+}
+
+.dark-wallet-css{
+    background-color: #181818;
+    @apply rounded-lg p-4 mt-3 dark-mode-text
+}
+.light-wallet-css{
+    background-color: rgb(230, 229, 229);
+    @apply rounded-lg p-4 mt-3 light-mode-text
+}

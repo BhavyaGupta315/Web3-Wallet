@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --body_background : #0A0A0A;
+    --body_color : #FFF;
+    --link_color : cyan;
+    --phrase-bg-color : #151515;
+    --border-color: rgb(243 244 246 / var(--tw-border-opacity)) /* #f3f4f6 */;
+}
+
+[data-theme="light"]{
+    --body_background : #F9F7F7;
+    --body-color : #000;
+    --link_color : navy;
+    --phrase-bg-color : #F2F2F2;
+    --border-color: #000;
+}
+
+.light-mode-button {
+  @apply text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xs px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700;
+}
+
+.dark-mode-button {
+  @apply text-gray-900  bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-xs px-5 py-2.5 me-2 mb-2
+}
+
+.danger-mode-button{
+  @apply text-white  bg-red-600 border border-black focus:outline-none hover:bg-red-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-xs px-3 py-2.5 me-2 mb-2
+}
+
+.light-mode-input {
+  @apply block p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 
+}
+
+.dark-mode-input {
+  @apply block p-2 bg-[#393E46] border-[#F5F7F8] border rounded-lg placeholder-gray-400 text-white text-xs focus:ring-blue-500 focus:border-blue-500
+}
+
+.phrase-bg{
+  background-color: var(--phrase-bg-color);
+}
+
+.footer-bg{
+  background-color: var(--body_background);
+  border-color: var(--border-color);
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+  font-family: 'Manrope';
+}
