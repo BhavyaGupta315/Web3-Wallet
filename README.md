@@ -10,3 +10,9 @@ npm install
 ```
 
 As of 1st commit, this is only react based.
+----------------------------------------------------
+## Update
+Also Added Functionality to check balances.
+Now You can Also check Balances by providing your public key.
+-----------------------------------------------------
+
