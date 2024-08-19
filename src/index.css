@@ -37,7 +37,14 @@
 }
 
 .dark-mode-input {
-  @apply block p-2 bg-[#393E46] border-[#F5F7F8] border rounded-lg placeholder-gray-400 text-white text-xs focus:ring-blue-500 focus:border-blue-500
+  @apply block p-2 bg-[#393E46] border-[#F5F7F8] border rounded-lg placeholder-gray-400 text-white text-xs focus:ring-blue-500 focus:border-blue-500;
+}
+
+.dark-mode-wallet-bar{
+  @apply bg-[#303030] cursor-pointer border border-transparent hover:border-2 hover:border-[#F2F2F2] transition-all duration-300;
+}
+.light-mode-wallet-bar{
+  @apply bg-[black] cursor-pointer border border-transparent hover:border-4 hover:border-gray-300 transition-all duration-300;
 }
 
 .phrase-bg{
