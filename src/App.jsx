@@ -27,14 +27,17 @@ export default function App() {
     if(state != ""){
       const isValid = validateMnemonic(state);
       console.log(isValid);
-      if(isValid) setMnemonic(state.split(" "));
+      if(isValid){
+        setMnemonic(state.split(" "));
+        setSecretPhaseGenerated(true);
+      }
       else alert("Invalid Recovery Phrase");
     }else{
       const words = await generateMnemonic(128);
       setMnemonicSeed(words);
       setMnemonic(words.split(" "));
+      setSecretPhaseGenerated(true);
     }
-    setSecretPhaseGenerated(true);
   }
   const createWallet = async (coin)=>{
       // console.log(mnemonic);
