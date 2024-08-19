@@ -18,3 +18,13 @@ body {
     background-color: rgb(230, 229, 229);
     @apply rounded-lg p-4 mt-3 light-mode-text
 }
+
+.dark-back-button img{
+    @apply w-9 h-10 mx-2 my-[0.2rem] 
+}
+.dark-back-button p{
+    @apply text-2xl font-semibold my-[0.45rem] 
+}
+.dark-back-button{
+    @apply border w-[17%] h-[7%] m-4 border-transparent hover:border-white
+}
