@@ -45,7 +45,7 @@ export default function WalletBar({ publicKeys, privateKeys, mode, index, setPri
         >
             <div className={`text-xl font-bold flex justify-between`}>
                 <div className="m-3" onClick={showWalletInfoOnClick}>
-                Wallet - {index+1}
+                Wallet - {index+1} (Click here)
                 </div>
                 <button className={`danger-mode-button text-xs mt-2`} onClick={()=>deleteWallet(index)}>Delete Wallet</button>
             </div>
